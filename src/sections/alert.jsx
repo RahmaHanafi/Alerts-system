@@ -67,21 +67,23 @@ const Alert = () => {
   return (
     <>
       <div className=" bg-background">
-        <section className="flex items-center justify-between space-x-2 sm:space-x-4 py-5">
+        <section className="flex items-center justify-between space-x-3 sm:space-x-4 py-5">
           <div className="flex gap-2 sm:gap-4 w-1/5 sm:w-1/6">
-            <div className="bg-blue text-blue rounded-xl h-9 sm:h-12">-</div>
-            <h1 className=" text-2xl flex items-center text-white  md:text-3xl lg:text-5xl font-bold ">
+            <div className="bg-blue text-blue rounded-xl h-9 sm:h-12 text-xs">
+              -
+            </div>
+            <h1 className=" text-xl flex items-center text-white  sm:text-3xl lg:text-5xl font-bold ">
               ALERTS
             </h1>
           </div>
 
-          <label className="input flex items-center max-sm:justify-center  bg-gray rounded-lg w-10/12 h-9 md:w-6/12 lg:w-8/12 sm:h-10 ">
+          <label className="input flex items-center max-sm:justify-center bg-gray rounded-lg w-7/12 h-9 md:w-6/12 lg:w-8/12 sm:h-10  ">
             <input
               type="text"
-              className="grow text-white"
+              className="grow text-white text-sm w-full "
               placeholder="Search by..."
             />
-            {/* <img src={searchIcon} alt="search icon" className="" /> */}
+            <img src={searchIcon} alt="search icon" className="" />
           </label>
           <div className=" relative pe-1  ">
             <div className="badge bad badge-success badge-xs text-white absolute -top-1 -right-1">

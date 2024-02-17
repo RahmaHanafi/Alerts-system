@@ -12,9 +12,7 @@ function App() {
   return (
     <>
       <div className="md:flex bg-background max-sm:flex-wrap">
-        {/* <Sample /> */}
         <Sidebar />
-        {/* <Card /> */}
         <section className=" md:ps-28 md:w-7/12 lg:w-8/12 md:mx-0 mx-3">
           <Alert />
         </section>

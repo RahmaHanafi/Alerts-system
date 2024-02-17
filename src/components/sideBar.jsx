@@ -5,6 +5,7 @@ import automationIcon from "/automation.svg";
 import portfollioIcon from "/portfollio.svg";
 import tradingIcon from "/trading.svg";
 import Icon from "../utils/icon";
+import vector from "/Vector.svg";
 import { useState } from "react";
 
 const Sidebar = () => {
@@ -20,7 +21,7 @@ const Sidebar = () => {
   return (
     <>
       <aside
-        className={`max-sm:hidden absolute z-10 inset-0 h-screen bg-black ease-linear duration-300   ${
+        className={`max-sm:hidden  absolute z-10 inset-0 h-screen bg-black ease-linear duration-300   ${
           isHovered ? "w-48 p-8" : " w-20 p-2"
         }`}
         onMouseEnter={handleMouseEnter}
@@ -146,6 +147,20 @@ const Sidebar = () => {
             </h1>
           </li>
         </ul>
+
+        <div className=" flex mt-40 gap-2 ">
+          <img src={vector} alt="vector" className="object-contain mx-auto" />
+          {isHovered && (
+            <div className=" ">
+              <h1 className=" text-white font-bold capitalize text-base ">
+                Moni Roy
+              </h1>
+              <h2 className="text-lightgray font-semibold capitalize text-sm">
+                Beginner
+              </h2>
+            </div>
+          )}
+        </div>
       </aside>
     </>
   );

@@ -25,7 +25,7 @@ const Card = ({
         >
           <input type="radio" name="my-accordion-1" className="" />
           <div
-            className={`collapse-title flex rounded-lg w-full  ${
+            className={`collapse-title flex rounded-lg w-full ${
               currentIndex === id ? "bg-blue" : "bg-gray"
             } `}
           >

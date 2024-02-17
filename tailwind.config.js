@@ -26,11 +26,16 @@ export default {
         wiggle: "wiggle 0.5s easeIn-out forwards",
         fadeInLeft: "fadeInLeft 0.7s  linear",
         fadeInRight: "fadeInRight 0.7s  linear",
+        close: "close 0.5s linear",
       },
       keyframes: {
         wiggle: {
           "0%": { opacity: 0 },
           "100%": { opacity: 1 },
+        },
+        close: {
+          "0%": { opacity: 1 },
+          "100%": { opacity: 0 },
         },
       },
       fontFamily: {
