@@ -1,4 +1,5 @@
 import Industry from "../components/industry";
+import SampleWheelPicker from "../components/wheel.picker";
 import Icon from "../utils/icon";
 const Filter = () => {
   const industries = [
@@ -17,9 +18,39 @@ const Filter = () => {
     { id: 10, name: "Utilities", title: "Utilities" },
     { id: 11, name: "Financials", title: "Financials" },
   ];
+
+  const strategy = [
+    {
+      id: "1",
+      value: "Big Option Buys",
+    },
+    {
+      id: "2",
+      value: "Merger Arbitrage",
+    },
+    {
+      id: "3",
+      value: "Short Reports",
+    },
+  ];
+
+  const asset = [
+    {
+      id: "1",
+      value: "Stocks",
+    },
+    {
+      id: "2",
+      value: "Options",
+    },
+    {
+      id: "3",
+      value: "Futures",
+    },
+  ];
   return (
     <>
-      <section className="bg-black rounded-lg px-6 w-full">
+      <section className="bg-black rounded-lg px-6 w-full mb-3">
         <h1 className=" capitalize text-white font-semibold text-3xl font-poppinsSemibold  text-center pt-4 pb-2">
           Filter
         </h1>
@@ -115,7 +146,7 @@ const Filter = () => {
                     market cap
                   </summary>
 
-                  <label className="label cursor-pointer flex justify-start gap-2">
+                  <label className="label cursor-pointer flex justify-start gap-2 h-7">
                     <input
                       type="radio"
                       name="radio-10"
@@ -123,7 +154,7 @@ const Filter = () => {
                     />
                     <span className="label-text">Micro</span>
                   </label>
-                  <label className="label cursor-pointer flex justify-start gap-2">
+                  <label className="label cursor-pointer flex justify-start gap-2 h-7">
                     <input
                       type="radio"
                       name="radio-10"
@@ -131,7 +162,7 @@ const Filter = () => {
                     />
                     <span className="label-text">Small</span>
                   </label>
-                  <label className="label cursor-pointer flex justify-start gap-2">
+                  <label className="label cursor-pointer flex justify-start gap-2 h-7">
                     <input
                       type="radio"
                       name="radio-10"
@@ -149,7 +180,7 @@ const Filter = () => {
                     Risk Level
                   </summary>
 
-                  <label className="label cursor-pointer flex justify-start gap-2">
+                  <label className="label cursor-pointer flex justify-start gap-2 h-7">
                     <input
                       type="radio"
                       name="radio-11"
@@ -157,7 +188,7 @@ const Filter = () => {
                     />
                     <span className="label-text">Low Risk</span>
                   </label>
-                  <label className="label cursor-pointer flex justify-start gap-2">
+                  <label className="label cursor-pointer flex justify-start gap-2 h-7">
                     <input
                       type="radio"
                       name="radio-11"
@@ -165,7 +196,7 @@ const Filter = () => {
                     />
                     <span className="label-text">Mid Risk</span>
                   </label>
-                  <label className="label cursor-pointer flex justify-start gap-2">
+                  <label className="label cursor-pointer flex justify-start gap-2 h-7">
                     <input
                       type="radio"
                       name="radio-11"
@@ -177,9 +208,26 @@ const Filter = () => {
               </li>
             </ul>
           </section>
+
+          <section className=" flex justify-between py-4 w-full">
+            <div className="w-1/2">
+              <h4 className="text-white font-bold capitalize text-center">
+                strategy
+              </h4>
+              <SampleWheelPicker data={strategy} />
+            </div>
+
+            <div className="w-1/2">
+              <h4 className="text-white font-bold capitalize text-center">
+                asset
+              </h4>
+              <SampleWheelPicker data={asset} />
+            </div>
+          </section>
         </section>
-        <section className=" flex justify-center">
-          <button className="btn mt-3 btn-primary font-semibold font-poppins text-white text-xl rounded-md px-10">
+
+        <section className=" flex justify-center ">
+          <button className="btn mt-3 btn-primary font-semibold font-poppins text-white text-xl rounded-md px-10 mb-3">
             Apply
           </button>
         </section>
