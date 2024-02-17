@@ -21,7 +21,7 @@ const Sidebar = () => {
   return (
     <>
       <aside
-        className={`max-sm:hidden  absolute z-10 inset-0 h-screen bg-black ease-linear duration-300   ${
+        className={`max-sm:hidden fixed z-10 inset-0 h-screen bg-black ease-linear duration-300   ${
           isHovered ? "w-48 p-8" : " w-20 p-2"
         }`}
         onMouseEnter={handleMouseEnter}
@@ -148,7 +148,7 @@ const Sidebar = () => {
           </li>
         </ul>
 
-        <div className=" flex mt-40 gap-2 ">
+        <div className=" flex mt-52 gap-2 ">
           <img src={vector} alt="vector" className="object-contain mx-auto" />
           {isHovered && (
             <div className=" ">

@@ -67,7 +67,7 @@ const Alert = () => {
   return (
     <>
       <div className=" bg-background">
-        <section className="flex items-center justify-between space-x-3 sm:space-x-4 py-5">
+        <section className="flex items-center justify-between space-x-3 sm:space-x-4 pb-5">
           <div className="flex gap-2 sm:gap-4 w-1/5 sm:w-1/6">
             <div className="bg-blue text-blue rounded-xl h-9 sm:h-12 text-xs">
               -
